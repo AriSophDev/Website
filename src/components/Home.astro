@@ -1,0 +1,98 @@
+---
+
+---
+
+<section id="Home">
+  <div class="Title">
+    <div class="content">
+      <h1>Bienvenido a Alegra Studio</h1>
+      <p>Transformando el mundo con sostenibilidad y tecnología</p>
+      <button id="scrollButton">Contactanos</button>
+    </div>
+  </div>
+</section>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+  section {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #442120;
+  }
+
+  .Title {
+    text-align: center;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Title h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .Title p {
+    font-size: 40px;
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:;
+  }
+
+  button {
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: #e23b89;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+  }
+
+  button:hover {
+    letter-spacing: 3px;
+    background-color: #623f7b;
+    color: hsl(0, 0%, 100%);
+    box-shadow: #623f7b;
+  }
+
+  button:active {
+    letter-spacing: 3px;
+    background-color: #623f7b;
+    color: hsl(0, 0%, 100%);
+    box-shadow: #623f7b;
+    transform: translateY(10px);
+    transition: 100ms;
+  }
+</style>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+  const scrollButton = document.getElementById("scrollButton");
+  const sectionToScrollTo = document.getElementById("Contact");
+
+  if (scrollButton && sectionToScrollTo) {
+    scrollButton.addEventListener("click", function () {
+      sectionToScrollTo.scrollIntoView({ behavior: "smooth" });
+    });
+  }
+});
+
+
+</script>
